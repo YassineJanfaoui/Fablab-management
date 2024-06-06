@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>equipment_managment</class>
+ <widget class="QMainWindow" name="equipment_managment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1318</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>equipment_managment</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>220</y>
+      <width>681</width>
+      <height>321</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>110</y>
+      <width>221</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="search">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>40</y>
+      <width>391</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+    background-color: white;
+    color: white;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    border-radius: 3px;
+  border: 2px solid gray;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>730</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+    border-radius: 50%;
+background-color:#586994;
+color:white;
+ border-width: 0px;
+  border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>160</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+    border-radius: 50%;
+background-color:#586994;
+color:white;
+ border-width: 0px;
+  border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>50</y>
+      <width>124</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+    border-radius: 50%;
+background-color:#586994;
+color:white;
+ border-width: 0px;
+  border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>311</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-top: 10px;
+background-color:#B4C4AE;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 3px;
+    font: 63 10pt &quot;Segoe UI Semibold&quot;;
+    color :black;
+}
+QLineEdit{
+    background-color: white;
+    color: white;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    border-radius: 3px;
+  border: 2px solid gray;
+}
+QPushButton:hover {
+    background-color: #45a049;
+}
+</string>
+    </property>
+    <property name="title">
+     <string>Equipement</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color :black;
+}</string>
+     </property>
+     <property name="text">
+      <string>ID equipemenet</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_id_eq">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>224</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>56</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color :black;
+}</string>
+     </property>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_name_eq">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>224</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>56</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color :black;
+}</string>
+     </property>
+     <property name="text">
+      <string>Type</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_type_eq">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>200</y>
+       <width>224</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>240</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color :black;
+}</string>
+     </property>
+     <property name="text">
+      <string>Purchase date</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit_eq">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>270</y>
+       <width>181</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>360</y>
+       <width>56</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color :black;
+}</string>
+     </property>
+     <property name="text">
+      <string>Status</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_price_eq">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>330</y>
+       <width>224</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>300</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font: 63 10pt &quot;Segoe UI Semibold&quot;;
+color :black;
+}</string>
+     </property>
+     <property name="text">
+      <string>Purchase price</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_statut_eq">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>400</y>
+       <width>224</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>160</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font: 10pt &quot;MS Shell Dlg 2&quot;;
+    background-color: blue; 
+    color: white;
+    border: none; 
+    border-radius: 10px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>PDF</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>730</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+    border-radius: 50%;
+background-color:#586994;
+color:white;
+ border-width: 0px;
+  border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>160</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font: 10pt &quot;MS Shell Dlg 2&quot;;
+    background-color: blue; 
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Charts</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>160</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+    border-radius: 50%;
+background-color:#586994;
+color:white;
+ border-width: 0px;
+  border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>560</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+    border-radius: 50%;
+background-color:#586994;
+color:white;
+ border-width: 0px;
+  border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>560</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+    border-radius: 50%;
+background-color:#586994;
+color:white;
+ border-width: 0px;
+  border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="menu">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>550</y>
+      <width>124</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gill sans MT 13</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 12pt &quot;Gill sans MT&quot; bold;
+    border-radius: 50%;
+	font-weight:bold;
+	background-color: rgb(110, 113, 118);
+color:#f0f0f0;
+ border-width: 0px;
+  border-radius: 10px;
+}
+QPushButton:hover
+{
+	background-color: rgb(216, 0, 0);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>MENU</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1318</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
